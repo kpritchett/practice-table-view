@@ -56,6 +56,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K7C-KU-QUM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="XqU-fb-RfE">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="BYZ-38-t0r" id="CGm-nt-zZp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="grN-E9-FRH">
                             <connections>
                                 <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="DV7-ab-qAp"/>
@@ -63,12 +68,65 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="XqU-fb-RfE" id="Gs0-g7-0CO"/>
                         <outlet property="myTableView" destination="lfN-qw-eLM" id="9gc-rl-2Bf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1144" y="-395"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Ysq-4Z-Fch">
+            <objects>
+                <viewController id="zxd-xx-FY2" customClass="DetailViewController" customModule="tableViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90D-Zv-9h0"/>
+                        <viewControllerLayoutGuide type="bottom" id="htH-0d-BcC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RDN-Nx-BNd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXN-U4-7Pz">
+                                <rect key="frame" x="148" y="114" width="305" height="196"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncH-9R-n4G">
+                                <rect key="frame" x="252" y="329" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wMS-mi-UtF">
+                                <rect key="frame" x="252" y="374" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkO-8g-S7n">
+                                <rect key="frame" x="277" y="474" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="zxd-xx-FY2" eventType="touchUpInside" id="gbI-rq-Z9h"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0S-xH-pMP">
+                                <rect key="frame" x="252" y="420" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="dXN-U4-7Pz" id="6Yg-gX-3Jn"/>
+                        <outlet property="nameTextField" destination="ncH-9R-n4G" id="Gd8-Kl-ayh"/>
+                        <outlet property="powerTextField" destination="G0S-xH-pMP" id="JOO-oN-Kxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="490-Ww-K8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="-395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h5M-av-4Bz">

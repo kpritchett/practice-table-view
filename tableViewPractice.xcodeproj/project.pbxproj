@@ -13,6 +13,8 @@
 		3F49AA7C1C46ACF200AE4226 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F49AA7B1C46ACF200AE4226 /* Images.xcassets */; };
 		3F49AA7F1C46ACF200AE4226 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F49AA7D1C46ACF200AE4226 /* LaunchScreen.xib */; };
 		3F49AA8B1C46ACF200AE4226 /* tableViewPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49AA8A1C46ACF200AE4226 /* tableViewPracticeTests.swift */; };
+		3F49AA951C49573100AE4226 /* SuperHeroClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49AA941C49573100AE4226 /* SuperHeroClass.swift */; };
+		3F49AA971C4E9E2300AE4226 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F49AA961C4E9E2300AE4226 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3F49AA841C46ACF200AE4226 /* tableViewPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F49AA891C46ACF200AE4226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F49AA8A1C46ACF200AE4226 /* tableViewPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewPracticeTests.swift; sourceTree = "<group>"; };
+		3F49AA941C49573100AE4226 /* SuperHeroClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroClass.swift; sourceTree = "<group>"; };
+		3F49AA961C4E9E2300AE4226 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				3F49AA741C46ACF200AE4226 /* AppDelegate.swift */,
 				3F49AA761C46ACF200AE4226 /* ViewController.swift */,
 				3F49AA781C46ACF200AE4226 /* Main.storyboard */,
+				3F49AA941C49573100AE4226 /* SuperHeroClass.swift */,
+				3F49AA961C4E9E2300AE4226 /* DetailViewController.swift */,
 				3F49AA7B1C46ACF200AE4226 /* Images.xcassets */,
 				3F49AA7D1C46ACF200AE4226 /* LaunchScreen.xib */,
 				3F49AA721C46ACF200AE4226 /* Supporting Files */,
@@ -214,6 +220,8 @@
 			files = (
 				3F49AA771C46ACF200AE4226 /* ViewController.swift in Sources */,
 				3F49AA751C46ACF200AE4226 /* AppDelegate.swift in Sources */,
+				3F49AA951C49573100AE4226 /* SuperHeroClass.swift in Sources */,
+				3F49AA971C4E9E2300AE4226 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
